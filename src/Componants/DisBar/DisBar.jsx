@@ -20,7 +20,7 @@ function moodCreate(){
   function logOut (){
     localStorage.removeItem("userToken");
 
-    navigate("/")
+    navigate("/UMS")
 
   }
   

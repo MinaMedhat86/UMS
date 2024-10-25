@@ -18,7 +18,7 @@ export default function Sidebar(props) {
   function logOut (){
     localStorage.removeItem("userToken");
 
-    navigate("/")
+    navigate("/UMS")
 
   }
  
