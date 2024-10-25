@@ -9,22 +9,24 @@ import { LoginContext } from '../../Context/LoginContext';
 
 
 export default function AddUser() {
+  let {objUser , setObjUser } =  useContext(LoginContext);
+  let {mood , setMood} = useContext(LoginContext)
 
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const { register, handleSubmit, formState: { errors }  } = useForm({defaultValues : {
+    firstName : mood === "create" ? "" :  objUser.firstName , 
+lastName : mood === "create" ? "" : objUser.lastName,
+age : mood === "create" ? "" : objUser.age,
+phone : mood === "create" ? "" : objUser.phone,
+birthDate : mood === "create" ? "" : objUser.birthDate,
+email : mood === "create" ? "" : objUser.email
 
- let {mood , setMood} = useContext(LoginContext)
+  }
+});
+
   let [loading , setLoading] = useState(false)
 
-let {objUser , setObjUser } =  useContext(LoginContext);
 
 
-const handleInputChange = (e) => {
-  const { name, value } = e.target;
-  setObjUser({
-    ...objUser,
-    [name]: value,
-  });
-};
 
 async  function addUser(value){
 setMood("create")
