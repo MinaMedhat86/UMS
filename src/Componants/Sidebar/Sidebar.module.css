@@ -1,0 +1,37 @@
+.linkStyle{
+    transition: all 0.5s;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.colorStyle{
+background-color: #F2EAE1 !important;
+}
+
+
+.linkStyle:hover , .linkStyle:focus {
+
+    background-color: #FEAF00;
+    text-align: center;
+    border-radius: 10px;
+} 
+
+
+.pColor {
+    color: var(--rating-color);
+}
+
+
+.logoColor{
+    color: var(--rating-color);
+    font-weight: bolder;
+}
+
+.flexStyle{
+    align-items: center;
+    justify-content: center;
+}

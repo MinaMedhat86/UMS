@@ -1,0 +1,20 @@
+.loginStyle{
+background : linear-gradient(to right , rgb(254, 175, 0, 0.9) , rgb(254, 175, 0, 0.6));
+
+}
+
+.boxStyle{
+    width: 475px;
+height: 550px;
+
+
+}
+
+.logoColor{
+    color: var(--rating-color);
+    font-weight: bolder;
+}
+.btnStyle{
+    background-color: #FEAF00;
+    padding-block: 7px;
+}

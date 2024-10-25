@@ -1,0 +1,45 @@
+.backToTop{
+    background-color: var(--rating-color);
+    width: 2.8rem;
+    height: 2.8rem;
+    text-align: center;
+    transition: all 1s;
+
+}
+
+.backToTop:hover{
+    border: 1px solid var(--container-color);
+    transform: scale(1.1);
+}
+
+.outColor{
+    background-color: var(--container-color)    ;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .slidbarStyle{
+        display: none  ;
+    }
+
+    .contentStyle{
+        width: 100%;
+        margin-inline: auto;
+    }
+    
+  }
+
+  @media screen and (min-width: 901px) {
+    .slidbarStyle {
+        width: 20%;
+        display: block;
+        background-color: #F2EAE1;
+    }
+
+    .contentStyle{
+        width: 80%;
+        margin-inline: auto;
+    }
+    
+  }

@@ -1,0 +1,12 @@
+.trStyle{
+    background-color: transparent !important;
+}
+
+.btnStyle{
+    color: var(--rating-color) !important;
+}
+
+.btnStyle:focus{
+    box-shadow: none !important;
+}
+

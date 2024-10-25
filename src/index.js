@@ -4,11 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import LoginContextProvider from './Context/LoginContext.jsx';
+// import "../node_modules/react-toastify/dist/ReactToastify.css"
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+<LoginContextProvider>
+
+<App />
+</LoginContextProvider> 
+
+   
 );
 
 // If you want to start measuring performance in your app, pass a function
